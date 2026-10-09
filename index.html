@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#244638">
+  <meta name="description" content="Media pembelajaran interaktif Darsana dan Sad Darsana.">
+  <title>Darsana — Jejak Kebijaksanaan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <nav class="nav-group nav-left" aria-label="Navigasi utama">
+        <button class="nav-icon" aria-label="Beranda" title="Beranda" onclick="go('home')"><span class="nav-glyph">⌂</span><span class="nav-label">Beranda</span></button>
+        <button class="nav-icon" aria-label="Penyusun" title="Penyusun" onclick="go('penyusun')"><span class="nav-glyph">♧</span><span class="nav-label">Penyusun</span></button>
+        <button class="nav-icon" aria-label="Petunjuk penggunaan" title="Petunjuk penggunaan" onclick="go('petunjuk')"><span class="nav-glyph">?</span><span class="nav-label">Petunjuk</span></button>
+      </nav>
+      <nav class="nav-group nav-right hidden" id="extraNav" aria-label="Fitur belajar">
+        <button class="nav-icon" aria-label="Daftar pustaka" title="Daftar pustaka" onclick="go('pustaka')"><span class="nav-glyph">▤</span><span class="nav-label">Sumber</span></button>
+        <button class="nav-icon" aria-label="Infografis" title="Infografis" onclick="go('infografis')"><span class="nav-glyph">▥</span><span class="nav-label">Infografis</span></button>
+        <button class="nav-icon" aria-label="Refleksi" title="Refleksi" onclick="go('refleksi')"><span class="nav-glyph">☼</span><span class="nav-label">Refleksi</span></button>
+        <button class="nav-icon" aria-label="Kuis" title="Kuis" onclick="startQuiz()"><span class="nav-glyph">✎</span><span class="nav-label">Kuis</span></button>
+      </nav>
+    </header>
+    <main id="app" class="main" aria-live="polite"></main>
+    <footer class="site-footer"><span class="footer-leaf">✦</span> Belajar dengan rasa ingin tahu · Bertumbuh dalam kebijaksanaan <span class="footer-leaf">✦</span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
