@@ -1,30 +1,31 @@
 <!doctype html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#e8e8d2">
-<meta name="description" content="Media Pembelajaran Interaktif Sad Darsana untuk kelas XI.">
-<title>Jejak Kebijaksanaan — MPI Darsana</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#244638">
+  <meta name="description" content="Media pembelajaran interaktif Darsana dan Sad Darsana.">
+  <title>Darsana — Jejak Kebijaksanaan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar" id="topbar">
-  <nav class="navtop" aria-label="Navigasi atas">
-    <button class="nav-item" onclick="go('profil')" aria-label="Profil"><span class="nav-icon">♙</span><span>Profil</span></button>
-    <button class="nav-item" onclick="go('peta')" aria-label="Beranda"><span class="nav-icon">⌂</span><span>Beranda</span></button>
-    <button class="nav-item" onclick="go('penyusun')" aria-label="Penyusun"><span class="nav-icon">♧</span><span>Penyusun</span></button>
-    <button class="nav-item" onclick="go('petunjuk')" aria-label="Petunjuk"><span class="nav-icon">?</span><span>Petunjuk</span></button>
-  </nav>
-</header>
-<main id="app" class="app" aria-live="polite"></main>
-<nav class="navbottom" id="navbottom" aria-label="Navigasi fitur">
-  <button class="nav-item" onclick="go('pustaka')"><span class="nav-icon">▤</span><span>Sumber</span></button>
-  <button class="nav-item" onclick="go('infografis')"><span class="nav-icon">▥</span><span>Infografis</span></button>
-  <button class="nav-item" onclick="go('refleksi')"><span class="nav-icon">☼</span><span>Refleksi</span></button>
-  <button class="nav-item" onclick="showQuizIntro()"><span class="nav-icon">✎</span><span>Kuis</span></button>
-</nav>
-<div id="modalRoot"></div>
-<script src="script.js"></script>
+  <div class="site-shell">
+    <header class="topbar">
+      <nav class="nav-group nav-left" aria-label="Navigasi utama">
+        <button class="nav-icon" aria-label="Beranda" title="Beranda" onclick="go('home')"><span class="nav-glyph">⌂</span><span class="nav-label">Beranda</span></button>
+        <button class="nav-icon" aria-label="Penyusun" title="Penyusun" onclick="go('penyusun')"><span class="nav-glyph">♧</span><span class="nav-label">Penyusun</span></button>
+        <button class="nav-icon" aria-label="Petunjuk penggunaan" title="Petunjuk penggunaan" onclick="go('petunjuk')"><span class="nav-glyph">?</span><span class="nav-label">Petunjuk</span></button>
+      </nav>
+      <nav class="nav-group nav-right hidden" id="extraNav" aria-label="Fitur belajar">
+        <button class="nav-icon" aria-label="Daftar pustaka" title="Daftar pustaka" onclick="go('pustaka')"><span class="nav-glyph">▤</span><span class="nav-label">Sumber</span></button>
+        <button class="nav-icon" aria-label="Infografis" title="Infografis" onclick="go('infografis')"><span class="nav-glyph">▥</span><span class="nav-label">Infografis</span></button>
+        <button class="nav-icon" aria-label="Refleksi" title="Refleksi" onclick="go('refleksi')"><span class="nav-glyph">☼</span><span class="nav-label">Refleksi</span></button>
+        <button class="nav-icon" aria-label="Kuis" title="Kuis" onclick="startQuiz()"><span class="nav-glyph">✎</span><span class="nav-label">Kuis</span></button>
+      </nav>
+    </header>
+    <main id="app" class="main" aria-live="polite"></main>
+    <footer class="site-footer"><span class="footer-leaf">✦</span> Belajar dengan rasa ingin tahu · Bertumbuh dalam kebijaksanaan <span class="footer-leaf">✦</span></footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
